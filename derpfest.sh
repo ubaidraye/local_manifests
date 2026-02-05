@@ -8,7 +8,8 @@ git clone https://github.com/ubaidraye/local_manifests .repo/local_manifests
 repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16.2 --git-lfs --no-clone-bundle
 /opt/crave/resync.sh || repo sync
 
-export BUILD_USERNAME=android-build
+export BUILD_USERNAME=RayeUB
+export BUILD_HOSTNAME=crave
 export DISABLE_STUB_VALIDATION=true
 
 . build/envsetup.sh
