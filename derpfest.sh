@@ -6,7 +6,7 @@ rm -rf kernel/motorola
 rm -rf vendor/motorola
 rm -rf .repo/local_manifests
 
-repo init -u --depth=1 https://github.com/DerpFest-AOSP/android_manifest.git -b 16.2 --git-lfs --no-clone-bundle
+repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16.2 --git-lfs --no-clone-bundle --depth=1
 git clone https://github.com/ubaidraye/local_manifests .repo/local_manifests
 /opt/crave/resync.sh || repo sync
 
