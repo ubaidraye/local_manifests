@@ -1,11 +1,13 @@
 #!/bin/bash
 rm -rf prebuilts/clang/host/linux-x86
-rm -rf kernel/motorola/sm8475 kernel/motorola/sm8475-devicetrees kernel/motorola/sm8475-modules
-rm -rf hardware/motorola device/motorola/eqs device/motorola/sm8475-common vendor/motorola/eqs vendor/motorola/sm8475-common
+rm -rf hardware/motorola
+rm -rf device/motorola
+rm -rf kernel/motorola
+rm -rf vendor/motorola
 rm -rf .repo/local_manifests
 
-git clone https://github.com/ubaidraye/local_manifests .repo/local_manifests
 repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16.2 --git-lfs --no-clone-bundle
+git clone https://github.com/ubaidraye/local_manifests .repo/local_manifests
 /opt/crave/resync.sh || repo sync
 
 export BUILD_USERNAME=RayeUB
