@@ -11,9 +11,6 @@
     <project name="android_kernel_motorola_sm8475-devicetrees" path="kernel/motorola/sm8475-devicetrees" remote="ubaidraye" revision="lineage-23.2" clone-depth="1"/>
     <project name="android_kernel_motorola_sm8475-modules" path="kernel/motorola/sm8475-modules" remote="ubaidraye" revision="lineage-23.2" clone-depth="1"/>
 
-    <project name="proprietary_vendor_motorola_eqs" path="vendor/motorola/eqs" remote="ubaidraye" revision="lineage-23.2" clone-depth="1"/>
-    <project name="proprietary_vendor_motorola_sm8475-common" path="vendor/motorola/sm8475-common" remote="ubaidraye" revision="lineage-23.2" clone-depth="1"/>
-
     <project name="android_hardware_motorola" path="hardware/motorola" remote="LineageOS" revision="lineage-23.2"/>
 
 </manifest>
