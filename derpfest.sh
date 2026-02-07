@@ -6,6 +6,7 @@ rm -rf kernel/motorola
 rm -rf vendor/motorola
 rm -rf .repo/local_manifests
 rm -rf *.zip
+rm -rf lineage/scripts
 
 repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16.2 --git-lfs --no-clone-bundle --depth=1
 git clone https://github.com/ubaidraye/local_manifests .repo/local_manifests
@@ -32,6 +33,7 @@ unzip EQS_RETAIL_15_V1SQS35H.58-10-8-1*.zip -d device/motorola/eqs/A15-vendor
 # extract new vendor
 cd device/motorola/eqs; ./setup-makefiles.py; ./extract-files.py A15-vendor
 cd ../../..
+
 export BUILD_USERNAME=RayeUB
 export BUILD_HOSTNAME=crave
 export DISABLE_STUB_VALIDATION=true
