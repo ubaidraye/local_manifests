@@ -6,7 +6,6 @@ rm -rf kernel/motorola
 rm -rf vendor/motorola
 rm -rf .repo/local_manifests
 rm -rf *.zip
-rm -rf lineage/scripts
 
 repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
 git clone https://github.com/ubaidraye/local_manifests .repo/local_manifests
